@@ -6,5 +6,5 @@ for(const section of sections){
     section.style.backgroundColor='lightgray'
 }
 
-// const placesContainer=document.getElementById('places-container');
-// placesContainer.style.backgroundColor='yellow';
+ const placesContainer=document.getElementById('places-container');
+ placesContainer.style.backgroundColor='yellow';
