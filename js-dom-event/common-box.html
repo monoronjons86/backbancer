@@ -25,9 +25,19 @@
          const commentbox=document.getElementById('new-comment');
          const newcommentbox=commentbox.value;
          console.log(newcommentbox);
-         //step-3
-         const commentContainer=document.getElementById()
-   
+         //step-3 set the comment inside the comment container
+         //1.get the comment container
+         //2.create a new element (p tag)
+         //3.set the text of comment as inneerText of the p tag
+         //4.add the p tag using appendChild
+         const commentContainer=document.getElementById('comment-container')
+         const p=document.createElement('p');
+         p.innerText=newcommentbox;
+         commentContainer.appendChild(p);
+
+         //step 4:clear the text area
+         commentbox.value='';
+        
 
         });
     </script>
