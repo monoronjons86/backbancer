@@ -8,3 +8,7 @@
 // for(let i=0;i<tagList.length;i++){
 //     console.log(tagList[i].innerText);
 // }
+
+//using className
+const classList=document.getElementsByClassName('test');
+console.log(classList);
