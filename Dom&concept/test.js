@@ -33,4 +33,8 @@
 // const myElement=document.getElementById('first-heading');
 // myElement.className='myclass';
 
+const parenContainer=document.getElementById('container-details');
+const  MyLi=document.createElement('li');
+MyLi.innerText='i am bla bla';
+parenContainer.appendChild(MyLi);
 
