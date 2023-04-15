@@ -20,5 +20,15 @@
 // myHeading.style.color='red';
 // console.log(myHeading.innerText);
 
-document.getElementById('heading').style.color='yellow'
-document.getElementById('heading').style.textAlign='center'
+// document.getElementById('heading').style.color='yellow'
+// document.getElementById('heading').style.textAlign='center'
+
+// const myElement=document.querySelectorAll('.test')
+// for(const value of myElement)
+// {
+//     console.log(value.innerText);
+
+// }
+
+const lastChild=document.querySelectorAll('.li-container');
+console.log(lastChild);
