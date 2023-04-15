@@ -9,9 +9,16 @@
 //     console.log(tagList[i].innerText);
 // }
 
-//using className
-const classList=document.getElementsByClassName('test');
-for(const value of classList){
-    value.style.backgroundColor='blue';
+// //using className
+// const classList=document.getElementsByClassName('test');
+// for(const value of classList){
+//     value.style.backgroundColor='blue';
 
-}
+// }
+// const myHeading=document.getElementById('heading');
+// myHeading.style.textAlign='center';
+// myHeading.style.color='red';
+// console.log(myHeading.innerText);
+
+document.getElementById('heading').style.color='yellow'
+document.getElementById('heading').style.textAlign='center'
