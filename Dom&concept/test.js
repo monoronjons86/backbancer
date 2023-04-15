@@ -33,8 +33,26 @@
 // const myElement=document.getElementById('first-heading');
 // myElement.className='myclass';
 
-const parenContainer=document.getElementById('container-details');
-const  MyLi=document.createElement('li');
-MyLi.innerText='i am bla bla';
-parenContainer.appendChild(MyLi);
+// const parenContainer=document.getElementById('container-details');
+// const  MyLi=document.createElement('li');
+// MyLi.innerText='i am bla bla';
+// parenContainer.appendChild(MyLi);
+
+// const container=document.getElementById('section-container');
+// //create a div
+// const div=document.createElement('div');
+// // console.log(div);
+// //make a h1 tag
+// const h1=document.createElement('h1')
+// h1.innerText='Exploring dynamic js'
+// //put h1 inside div
+// div.appendChild(h1);
+// container.appendChild(div);
+
+const container=document.getElementById('section-container');
+const div=document.createElement('div');
+const h1=document.createElement('h1');
+h1.innerText='Exploring dynamic js'
+div.appendChild(h1);
+container.appendChild(div);
 
