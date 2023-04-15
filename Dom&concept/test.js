@@ -49,10 +49,15 @@
 // div.appendChild(h1);
 // container.appendChild(div);
 
-const container=document.getElementById('section-container');
-const div=document.createElement('div');
-const h1=document.createElement('h1');
-h1.innerText='Exploring dynamic js'
-div.appendChild(h1);
-container.appendChild(div);
+// const container=document.getElementById('section-container');
+// const div=document.createElement('div');
+// const h1=document.createElement('h1');
+// h1.innerText='Exploring dynamic js'
+// div.appendChild(h1);
+// container.appendChild(div);
+
+document.getElementById('att-container').setAttribute('class','myClass ')
+document.getElementById('att-container').setAttribute('value','myValue ')
+const MyAttAtiBute= document.getElementById('att-container').getAttribute('id')
+console.log(MyAttAtiBute);
 
