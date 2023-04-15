@@ -11,4 +11,7 @@
 
 //using className
 const classList=document.getElementsByClassName('test');
-console.log(classList);
+for(const value of classList){
+    value.style.backgroundColor='blue';
+
+}
