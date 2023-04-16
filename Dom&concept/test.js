@@ -61,4 +61,6 @@
 // const MyAttAtiBute= document.getElementById('att-container').getAttribute('id')
 // console.log(MyAttAtiBute);
 
+const value=document.getElementById('htmlContainer');
+console.log(value.innerHTML);
 
