@@ -56,8 +56,9 @@
 // div.appendChild(h1);
 // container.appendChild(div);
 
-document.getElementById('att-container').setAttribute('class','myClass ')
-document.getElementById('att-container').setAttribute('value','myValue ')
-const MyAttAtiBute= document.getElementById('att-container').getAttribute('id')
-console.log(MyAttAtiBute);
+// document.getElementById('att-container').setAttribute('class','myClass ')
+// document.getElementById('att-container').setAttribute('value','myValue ')
+// const MyAttAtiBute= document.getElementById('att-container').getAttribute('id')
+// console.log(MyAttAtiBute);
+
 
