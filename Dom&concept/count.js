@@ -12,5 +12,4 @@ document.getElementById('counter').innerText=value;
 document.getElementById('success').addEventListener('click',function(){
     value=value-1;
     document.getElementById('counter').innerText=value;
-
 });
