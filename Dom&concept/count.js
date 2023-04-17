@@ -5,7 +5,12 @@ document.getElementById('danger').addEventListener('click',function(){
 document.getElementById('counter').innerText=value;
 });
 
-function makeMinus(){
-    value=value-1
+// function makeMinus(){
+//     value=value-1
+//     document.getElementById('counter').innerText=value;
+// }
+document.getElementById('success').addEventListener('click',function(){
+    value=value-1;
     document.getElementById('counter').innerText=value;
-}
+
+});
