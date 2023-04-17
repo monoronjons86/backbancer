@@ -4,3 +4,8 @@ document.getElementById('danger').addEventListener('click',function(){
     // console.log(value);
 document.getElementById('counter').innerText=value;
 });
+
+function makeMinus(){
+    value=value-1
+    document.getElementById('counter').innerText=value;
+}
