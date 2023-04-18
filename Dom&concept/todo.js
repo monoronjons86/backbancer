@@ -22,9 +22,13 @@ const elements=document.querySelectorAll('.DeleteBtn');
   for(const value of elements)
   {
     value.addEventListener('click',function(event){
-        console.log(event.target.innerText);
-
+        event.target.parentNode.parentNode.style.display='none';
     });
   }
+});
+document.getElementById('clear-btn').addEventListener('click',function(e){
+    // console.log(e.target.parentNode);
+    e.target.parentNode.style.display='none';
+
 });
 
