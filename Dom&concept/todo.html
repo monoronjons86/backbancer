@@ -12,7 +12,22 @@
     <div class="text-center container w-100 m-auto mt-5">
         <div class="input-group mt-5">
             <input id="input-value" class="form-control" aria-label="with textarea">
-            <button id="input-btn" class=" btn btn-danger"></button>
+            <button id="input-btn" class=" btn btn-danger ms-1">Add Items</button>
+        </div>
+        <div class="mt-5">
+            <table id="table" class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Number</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="content-container">
+
+                </tbody>
+            </table>
+            <button id="clear-btn" class="btn btn-danger px-4">Clear All</button>
         </div>
 
     </div>
