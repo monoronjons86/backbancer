@@ -9,7 +9,7 @@
 //     console.log(tagList[i].innerText);
 // }
 
-// //using className
+//using className
 // const classList=document.getElementsByClassName('test');
 // for(const value of classList){
 //     value.style.backgroundColor='blue';
@@ -23,12 +23,12 @@
 // document.getElementById('heading').style.color='yellow'
 // document.getElementById('heading').style.textAlign='center'
 
-// const myElement=document.querySelectorAll('.test')
-// for(const value of myElement)
-// {
-//     console.log(value.innerText);
+const myElement=document.querySelectorAll('.test')
+for(const value of myElement)
+{
+    console.log(value.innerText);
 
-// }
+}
 
 // const myElement=document.getElementById('first-heading');
 // myElement.className='myclass';
