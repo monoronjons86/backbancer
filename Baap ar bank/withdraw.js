@@ -52,7 +52,22 @@ document.getElementById('btn-withdraw').addEventListener('click',function(){
     const withdrawField=document.getElementById('withdraw-filed');
     const withdrawFieldTotalString=withdrawField.value;
     const withdrawFieldTotal=parseFloat(withdrawFieldTotalString);
-    console.log(typeof withdrawFieldTotal);
+    
+    const withdrawTotalElement=document.getElementById('withdraw-total')
+    const withdrawTotalElementString=withdrawTotalElement.innerText;
+    const withdrawTotal=parseFloat(withdrawTotalElementString);
 
+    const newWithdrawTotal=withdrawFieldTotal+withdrawTotal;
+    withdrawTotalElement.innerText=newWithdrawTotal;
+
+
+    const balanceAmount=document.getElementById('balance-total');
+    const BalanceTotalElementString=balanceAmount.innerText;
+    const BalanceTotalElement=parseFloat(BalanceTotalElementString);
+
+    const totalBalance=BalanceTotalElement-withdrawFieldTotal
+    balanceAmount.innerText=totalBalance;
+
+    
 
 });
