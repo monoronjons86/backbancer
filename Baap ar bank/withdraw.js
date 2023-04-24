@@ -12,6 +12,8 @@
 
 
 */
+
+/*
 //step-1
 document.getElementById('btn-withdraw').addEventListener('click',function(){
     //step-2:
@@ -33,7 +35,7 @@ document.getElementById('btn-withdraw').addEventListener('click',function(){
     const BalanceTotalElement=document.getElementById('balance-total');
     const previousBalanceTotalString=BalanceTotalElement.innerText;
     const previousBalanceTotal=parseFloat(previousBalanceTotalString);
-    console.log(previousBalanceTotal);
+    // console.log(previousBalanceTotal);
 
     //step-6
     const newBalanceTotal=previousBalanceTotal-newWithDrawAmount;
@@ -41,6 +43,16 @@ document.getElementById('btn-withdraw').addEventListener('click',function(){
 
     //step-7:
     withdrawField.value=''
+
+
+});
+*/
+
+document.getElementById('btn-withdraw').addEventListener('click',function(){
+    const withdrawField=document.getElementById('withdraw-filed');
+    const withdrawFieldTotalString=withdrawField.value;
+    const withdrawFieldTotal=parseFloat(withdrawFieldTotalString);
+    console.log(typeof withdrawFieldTotal);
 
 
 });
