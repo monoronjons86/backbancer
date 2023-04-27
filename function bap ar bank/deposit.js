@@ -1,14 +1,15 @@
-function getInputFiledValueById(inputId){
-    const inputField=document.getElementById(inputId);
+function getInputFiledValueById(inputFieldId){
+    const inputField=document.getElementById(inputFieldId);
     const inputFieldValueString=inputField.value;
     const inputFieldValue=parseFloat(inputFieldValueString);
     inputField.value='';
     return inputFieldValue;
 }
-function getElementValueById(elementId){
-    const element=document.getElementById(elementId)
-    const elementValueString=element.innerText;
-    const value=parseFloat(elementValueString);
+function getTextElementValueById(elementId){
+    const textElement=document.getElementById(elementId);
+    const textElementValueString=textElement.innerText;
+    const textElementValue=parseFloat(textElementValueString);
+    return textElementValue;
 }
 document.getElementById('btn-deposit').addEventListener('click',function(){
     /*
@@ -17,6 +18,11 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
     3.convert string  value to a number
     */
    const newDepositAmount=getInputFiledValueById('deposit-filed');
+   /*
+   get previous deposit total by id
+   */
+  const previousDepositTotal=getTextElementValueById('deposit-total');
+  console.log(newDepositAmount);
 
     
 
