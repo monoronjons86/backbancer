@@ -8,13 +8,21 @@
 6.calculate new balance total  
 7.set balance total using setTextElementValueById
 */
+// document.getElementById('btn-withdraw').addEventListener('click',function(){
+//     const newWithdrawAmount=getInputFiledValueById('withdraw-field');
+//     const previousWithdrawTotal=getTextElementValueById('withdraw-total');
+//     const newWithdrawTotal=previousWithdrawTotal+newWithdrawAmount;
+//     setTextElementValueById('withdraw-total',newWithdrawTotal);
+//     const previousBalanceTotal=getTextElementValueById('balance-total')
+//     const newBalanceTotal=previousBalanceTotal-newWithdrawAmount;
+//     setTextElementValueById('balance-total',newBalanceTotal);
+// });
 document.getElementById('btn-withdraw').addEventListener('click',function(){
-    const newWithdrawAmount=getInputFiledValueById('withdraw-field');
+    const newWithdrawAmount=getInputFieldValueById('withdraw-field');
     const previousWithdrawTotal=getTextElementValueById('withdraw-total');
     const newWithdrawTotal=previousWithdrawTotal+newWithdrawAmount;
     setTextElementValueById('withdraw-total',newWithdrawTotal);
-    const previousBalanceTotal=getTextElementValueById('balance-total')
+    const previousBalanceTotal=getTextElementValueById('balance-total');
     const newBalanceTotal=previousBalanceTotal-newWithdrawAmount;
     setTextElementValueById('balance-total',newBalanceTotal);
-
 });
