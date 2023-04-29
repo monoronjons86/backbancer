@@ -15,3 +15,5 @@
 
 document.getElementById('heading').style.color='yellow';
 document.getElementById('heading').style.backgroundColor='tomato';
+const myElement=document.querySelector('#heading');
+console.log(myElement);
