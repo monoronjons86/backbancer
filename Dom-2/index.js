@@ -31,7 +31,19 @@ const myLi=document.createElement('li');
 myLi.innerText='four';
 parentContainer.appendChild(myLi);
 
-const sectionCon=document.getElementById('sectionContainer');
-const sectionDiv=document.createElement('section');
-sectionDiv.innerText='hello';
-sectionCon.appendChild(sectionDiv);
+// const sectionCon=document.getElementById('sectionContainer');
+// const sectionDiv=document.createElement('section');
+// sectionDiv.innerText='hello';
+// sectionCon.appendChild(sectionDiv);
+
+//=====create dynamic in javascript appendChild========
+
+// const container=document.getElementById('sectionContainer');
+// const div=document.createElement('div');
+// const h1=document.createElement('h1');
+// h1.innerText='Exploring the js ';
+// div.appendChild(h1);
+// container.appendChild(div);
+
+document.getElementById('att-container').setAttribute('class','myclass');
+document.getElementById('att-container').setAttribute('value','myvalue')
