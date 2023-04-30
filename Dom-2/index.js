@@ -17,5 +17,21 @@
 // document.getElementById('heading').style.backgroundColor='tomato';
 // const myElement=document.querySelector('#heading');
 // console.log(myElement);
-const lastChild=document.querySelectorAll('.li-container:last-child');
-console.log(lastChild);
+// const myElement=document.getElementById('first-heading');
+// myElement.style.color='red';
+// myElement.style.backgroundColor='blue';
+// myElement.style.padding='20px';
+
+// const parentContainer=document.getElementById('container-details');
+// const myLi=document.createElement('li');
+// myLi.innerText='four';
+// parentContainer.appendChild(myLi);
+const parentContainer=document.getElementById('container-details');
+const myLi=document.createElement('li');
+myLi.innerText='four';
+parentContainer.appendChild(myLi);
+
+const sectionCon=document.getElementById('sectionContainer');
+const sectionDiv=document.createElement('section');
+sectionDiv.innerText='hello';
+sectionCon.appendChild(sectionDiv);
