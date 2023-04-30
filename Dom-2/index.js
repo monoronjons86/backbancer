@@ -13,7 +13,9 @@
 // myHeading.style.backgroundColor='green';
 // console.log(myHeading.innerText);
 
-document.getElementById('heading').style.color='yellow';
-document.getElementById('heading').style.backgroundColor='tomato';
-const myElement=document.querySelector('#heading');
-console.log(myElement);
+// document.getElementById('heading').style.color='yellow';
+// document.getElementById('heading').style.backgroundColor='tomato';
+// const myElement=document.querySelector('#heading');
+// console.log(myElement);
+const lastChild=document.querySelectorAll('.li-container:last-child');
+console.log(lastChild);
