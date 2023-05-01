@@ -3,10 +3,10 @@ const myElement=document.getElementById('foatingTextArea2');
 const myElementValue=myElement.value ;
 myElement.value='';
 
-const h1=document.createElement('h1')
-h1.innerText=myElementValue;
+const p=document.createElement('p')
+p.innerText=myElementValue;
 
 const parent=document.querySelector('#commet-container');
-parent.appendChild(h1);
+parent.appendChild(p);
 
 });
