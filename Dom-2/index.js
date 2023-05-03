@@ -38,12 +38,12 @@ parentContainer.appendChild(myLi);
 
 //=====create dynamic in javascript appendChild========
 
-// const container=document.getElementById('sectionContainer');
-// const div=document.createElement('div');
-// const h1=document.createElement('h1');
-// h1.innerText='Exploring the js ';
-// div.appendChild(h1);
-// container.appendChild(div);
+const container=document.getElementById('sectionContainer');
+const div=document.createElement('div');
+const h1=document.createElement('h1');
+h1.innerText='Exploring the js ';
+div.appendChild(h1);
+container.appendChild(div);
 
 document.getElementById('att-container').setAttribute('class','myclass');
 document.getElementById('att-container').setAttribute('value','myvalue')
