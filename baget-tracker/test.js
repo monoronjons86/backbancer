@@ -9,9 +9,7 @@ document.getElementById('add-btn').addEventListener('click',function(){
     const allList=document.getElementsByClassName('new-li');
     for(const item of allList){
         item.addEventListener('click',function(e){
-            console.log(e.target.parentNode);
-
-
+            e.target.parentNode.removeChild(e.target)
         });
     }
 });
