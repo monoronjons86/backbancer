@@ -70,3 +70,15 @@ document.getElementById('dairy-btn').addEventListener('click',function(){
    dairy.innerText=roseTotal;
 });
 
+document.getElementById('Total').addEventListener('click',function(){
+   const chocolate=document.getElementById('chocolate').innerText;
+   const rose=document.getElementById('rose').innerText;
+   const dairy=document.getElementById('dairy').innerText
+
+   const total=parseInt(chocolate)+parseInt(rose)+parseInt(dairy);
+   console.log(total);
+
+});
+
+
+
