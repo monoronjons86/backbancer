@@ -51,6 +51,22 @@ document.getElementById('kit-katbuy-btn').addEventListener('click',function(){
 
    const chocolate=document.getElementById('chocolate');
    chocolate.innerText=kitkatTotal;
+});
+document.getElementById('rose-buy-btn').addEventListener('click',function(){
+   const quantity=document.getElementById('rose-quantity');
+   const roseQuantity=quantity.value;
+   const roseTotal=roseQuantity*100
 
+   const rose=document.getElementById('rose');
+   rose.innerText=roseTotal;
 
 });
+document.getElementById('dairy-btn').addEventListener('click',function(){
+   const quantity= document.getElementById('dairy-quantity');
+   const dairyQuantity=quantity.value;
+   const roseTotal=dairyQuantity*50;
+
+   const dairy=document.getElementById('dairy');
+   dairy.innerText=roseTotal;
+});
+
