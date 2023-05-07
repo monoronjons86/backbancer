@@ -47,18 +47,20 @@
 document.getElementById('kit-katbuy-btn').addEventListener('click',function(){
    const quantity=getInputValue('kitkat-quantity')
    const kitkatTotal=quantity*200;
-   setInnerText('chocolate',kitkatTotal)
+   setInnerText('chocolate',kitkatTotal);
+   total();
 });
 document.getElementById('rose-buy-btn').addEventListener('click',function(){
    const quantity=getInputValue('rose-quantity')
-   const roseTotal=quantity*100
-   setInnerText('rose',roseTotal)
+   const roseTotal=quantity*100;
+   setInnerText('rose',roseTotal);
+   total();
 });
 document.getElementById('dairy-btn').addEventListener('click',function(){
    const quantity=getInputValue('dairy-quantity');
    const DailyTotal=quantity*50;
    setInnerText('dairy',DailyTotal);
-
+   total();
 });
 
 function setInnerText(id,value){
@@ -68,6 +70,29 @@ function getInputValue(id){
    const value=document.getElementById(id).value;
    return parseInt(value);
 }
+
+function total(){
+   const chocolate=document.getElementById('chocolate').innerText;
+   const dairy=document.getElementById('dairy').innerText;
+   const rose=document.getElementById('rose').innerText;
+   const totalSum=parseInt(rose)+parseInt(dairy)+parseInt(chocolate);
+
+   document.getElementById('Total').innerText=totalSum;
+   setInnerText('Total',totalSum);
+}
+document.getElementById('promoApplyBtn').addEventListener('click',function(){
+   const promoCode=getInputValue('promo-code');
+   if(promoCode==101){
+      const total=document.getElementById('Total').innerText;
+      const sum=total-parseInt(total)*0.5;
+      setInnerText('all-total',sum)
+   }
+   else{
+      alert('wrong promo code try again with valid code');
+   }
+
+
+});
 
 
 
