@@ -45,30 +45,29 @@
 //     }
 //  });
 document.getElementById('kit-katbuy-btn').addEventListener('click',function(){
-   const quantity= document.getElementById('kitkat-quantity');
-   const kitQuantity=quantity.value ;
-   const kitkatTotal=kitQuantity*200;
-
-   const chocolate=document.getElementById('chocolate');
-   chocolate.innerText=kitkatTotal;
+   const quantity=getInputValue('kitkat-quantity')
+   const kitkatTotal=quantity*200;
+   setInnerText('chocolate',kitkatTotal)
 });
 document.getElementById('rose-buy-btn').addEventListener('click',function(){
-   const quantity=document.getElementById('rose-quantity');
-   const roseQuantity=quantity.value;
-   const roseTotal=roseQuantity*100
-
-   const rose=document.getElementById('rose');
-   rose.innerText=roseTotal;
-
+   const quantity=getInputValue('rose-quantity')
+   const roseTotal=quantity*100
+   setInnerText('rose',roseTotal)
 });
 document.getElementById('dairy-btn').addEventListener('click',function(){
-   const quantity= document.getElementById('dairy-quantity');
-   const dairyQuantity=quantity.value;
-   const roseTotal=dairyQuantity*50;
+   const quantity=getInputValue('dairy-quantity');
+   const DailyTotal=quantity*50;
+   setInnerText('dairy',DailyTotal);
 
-   const dairy=document.getElementById('dairy');
-   dairy.innerText=roseTotal;
 });
+
+function setInnerText(id,value){
+   document.getElementById(id).innerText=value;
+}
+function getInputValue(id){
+   const value=document.getElementById(id).value;
+   return parseInt(value);
+}
 
 
 
