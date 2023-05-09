@@ -41,5 +41,4 @@ document.getElementById('btn-case-minus').addEventListener('click',function(){
    const newCaseNumber=updatecaseNumber(false);
    updateCaseTotalPrice(newCaseNumber);
 });
-
 */
