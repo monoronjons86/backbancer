@@ -3,6 +3,7 @@ document.getElementById('btn-case-plus').addEventListener('click',function(){
     const caseNumberString=caseNumberField.value ;
     const caseTotalElement=parseInt(caseNumberString);
 
-    const caseTotalElement
+    const newCaseNumber=caseTotalElement+1;
+    caseNumberField.value=newCaseNumber;
 
 });
