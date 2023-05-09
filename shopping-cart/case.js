@@ -6,6 +6,9 @@
 5.set the value to the case number field
 
 */
+
+/*
+
 function updatecaseNumber(isIncrease){
     const caseNumberField= document.getElementById('case-number-filed');
     const caseNumberString=caseNumberField.value;
@@ -37,7 +40,6 @@ document.getElementById('btn-case-plus').addEventListener('click',function(){
 document.getElementById('btn-case-minus').addEventListener('click',function(){
    const newCaseNumber=updatecaseNumber(false);
    updateCaseTotalPrice(newCaseNumber);
-
-
-
 });
+
+*/
