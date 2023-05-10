@@ -34,7 +34,7 @@ function updatecaseNumber(isIncrease){
     const previousCaseNumber=parseInt(caseNumberString);
 
     let newCaseNumber;
-    if(isIncrease==isIncrease){
+    if(isIncrease===true){
         newCaseNumber=previousCaseNumber+1;
 
     }
@@ -51,11 +51,13 @@ document.getElementById('btn-case-plus').addEventListener('click',function(){
     const caseTotalPrice=newCaseNumber*59;
     const caseTotalElement=document.getElementById('case-total');
     caseTotalElement.innerText=caseTotalPrice;
-
-
 });
 
 document.getElementById('btn-case-minus').addEventListener('click',function(){
-  updatecaseNumber(false);
+  const newCaseNumber= updatecaseNumber(false);
+
+  const caseTotalPrice=newCaseNumber*59;
+  const caseTotalElement=document.getElementById('case-total');
+  caseTotalElement.innerText=caseTotalPrice;
 
 });
