@@ -44,20 +44,30 @@ function updatecaseNumber(isIncrease){
     caseNumberField.value =newCaseNumber;
     return newCaseNumber;
 }
-
-
-document.getElementById('btn-case-plus').addEventListener('click',function(){
-    const newCaseNumber=updatecaseNumber(true);
+function updateCaseTotalPrice(newCaseNumber){
     const caseTotalPrice=newCaseNumber*59;
     const caseTotalElement=document.getElementById('case-total');
     caseTotalElement.innerText=caseTotalPrice;
+
+}
+
+document.getElementById('btn-case-plus').addEventListener('click',function(){
+    const newCaseNumber=updatecaseNumber(true);
+    updateCaseTotalPrice(newCaseNumber);
+
+
+    // const caseTotalPrice=newCaseNumber*59;
+    // const caseTotalElement=document.getElementById('case-total');
+    // caseTotalElement.innerText=caseTotalPrice;
 });
 
 document.getElementById('btn-case-minus').addEventListener('click',function(){
   const newCaseNumber= updatecaseNumber(false);
 
-  const caseTotalPrice=newCaseNumber*59;
-  const caseTotalElement=document.getElementById('case-total');
-  caseTotalElement.innerText=caseTotalPrice;
+  updateCaseTotalPrice(newCaseNumber);
+
+//   const caseTotalPrice=newCaseNumber*59;
+//   const caseTotalElement=document.getElementById('case-total');
+//   caseTotalElement.innerText=caseTotalPrice;
 
 });
