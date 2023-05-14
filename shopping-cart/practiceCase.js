@@ -54,6 +54,7 @@ function updateCaseTotalPrice(newCaseNumber){
 document.getElementById('btn-case-plus').addEventListener('click',function(){
     const newCaseNumber=updatecaseNumber(true);
     updateCaseTotalPrice(newCaseNumber);
+    calculateSubTotal();
 
 
     // const caseTotalPrice=newCaseNumber*59;
@@ -65,6 +66,7 @@ document.getElementById('btn-case-minus').addEventListener('click',function(){
   const newCaseNumber= updatecaseNumber(false);
 
   updateCaseTotalPrice(newCaseNumber);
+  calculateSubTotal();
 
 //   const caseTotalPrice=newCaseNumber*59;
 //   const caseTotalElement=document.getElementById('case-total');
