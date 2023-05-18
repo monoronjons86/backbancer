@@ -71,5 +71,4 @@ document.getElementById('btn-case-minus').addEventListener('click',function(){
 //   const caseTotalPrice=newCaseNumber*59;
 //   const caseTotalElement=document.getElementById('case-total');
 //   caseTotalElement.innerText=caseTotalPrice;
-
 });
