@@ -7,6 +7,25 @@ document.getElementById('first-card').addEventListener('click',function(){
     const priceTotal=parseInt(ProductPrice) * parseInt(ProductQuantity);
     console.log(priceTotal, typeof priceTotal);
 
+    //show the data
+    // const container=document.getElementById('table-container')
+    // const tr=document.createElement('tr');
+    // tr.innerHTML=`
+    // <td>${1}</td>
+    // <td>${ProductName}</td>
+    // <td>${ProductPrice}</td>
+    // <td>${ProductQuantity}</td>
+    // <td>${priceTotal}</td>
+    // `
+    // container.appendChild(tr);
+
+    // using function
+    displayData(ProductName,ProductPrice,ProductQuantity,priceTotal);
+
+});
+
+//common function to display data
+function displayData(ProductName,ProductPrice,ProductQuantity,priceTotal){
     const container=document.getElementById('table-container')
     const tr=document.createElement('tr');
     tr.innerHTML=`
@@ -18,5 +37,4 @@ document.getElementById('first-card').addEventListener('click',function(){
     `
     container.appendChild(tr);
 
-
-});
+}
