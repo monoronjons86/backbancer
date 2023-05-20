@@ -76,7 +76,16 @@ document.getElementById('third-card').addEventListener('click',function(){
 
 //using last card
 document.getElementById('last-card').addEventListener('click',function(){
-    console.log('clicked here');
+    serial+=1;
+    const productName=document.getElementById('last-title').innerText ;
+    const productPrice=document.getElementById('first-input').value ;
+    const productQuantity=document.getElementById('second-input').value;
+    console.log(typeof productPrice,typeof productQuantity);
+    const total=parseInt(productPrice)/parseInt(productQuantity)
+    displayData(productName,productPrice,productQuantity,total);
+
+
+
 
 });
 
