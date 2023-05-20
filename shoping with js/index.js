@@ -23,6 +23,20 @@ document.getElementById('first-card').addEventListener('click',function(){
     displayData(ProductName,ProductPrice,ProductQuantity,priceTotal);
 
 });
+//using event object from browser
+document.getElementById('second-card').addEventListener('click',function(e){
+// console.log(e.target.parentNode)
+const productName=e.target.parentNode.parentNode.children[0].innerText;
+const productPrice=e.target.parentNode.parentNode.children[2].children[0].innerText;
+const ProductQuantity=e.target.parentNode.parentNode.children[3].children[0].innerText;
+console.log(ProductQuantity,productName,productPrice);
+
+const sumToTal=parseInt(productPrice)+parseInt(ProductQuantity);
+displayData(productName,productPrice,ProductQuantity,sumToTal);
+
+});
+
+
 
 //common function to display data
 function displayData(ProductName,ProductPrice,ProductQuantity,priceTotal){
@@ -36,5 +50,4 @@ function displayData(ProductName,ProductPrice,ProductQuantity,priceTotal){
     <td>${priceTotal}</td>
     `
     container.appendChild(tr);
-
 }
