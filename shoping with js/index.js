@@ -1,4 +1,8 @@
+
+let serial=0;
 document.getElementById('first-card').addEventListener('click',function(){
+    // serial=serial+1;
+    serial+=1;
     //get the data from html using id
     const ProductName=document.getElementById('first-name').innerText;
     const ProductPrice=document.getElementById('first-price').innerText;
@@ -25,6 +29,7 @@ document.getElementById('first-card').addEventListener('click',function(){
 });
 //using event object from browser
 document.getElementById('second-card').addEventListener('click',function(e){
+    serial+=1;
 // console.log(e.target.parentNode)
 const productName=e.target.parentNode.parentNode.children[0].innerText;
 const productPrice=e.target.parentNode.parentNode.children[2].children[0].innerText;
@@ -36,6 +41,57 @@ displayData(productName,productPrice,ProductQuantity,sumToTal);
 
 });
 
+document.getElementById('third-card').addEventListener('click',function(){
+    // serial=serial+1;
+    serial+=1;
+    //get the data from html using id
+    const ProductName=document.getElementById('third-title').innerText;
+    const ProductPrice=document.getElementById('third-price').innerText;
+    const ProductQuantity=document.getElementById('third-quantity').innerText;
+    // console.log(typeof ProductPrice,typeof ProductQuantity);
+    const priceTotal=parseInt(ProductPrice)-parseInt(ProductQuantity);
+    console.log(priceTotal, typeof priceTotal);
+
+    //show the data
+    // const container=document.getElementById('table-container')
+    // const tr=document.createElement('tr');
+    // tr.innerHTML=`
+    // <td>${1}</td>
+    // <td>${ProductName}</td>
+    // <td>${ProductPrice}</td>
+    // <td>${ProductQuantity}</td>
+    // <td>${priceTotal}</td>
+    // `
+    // container.appendChild(tr);
+
+    // using function
+    displayData(ProductName,ProductPrice,ProductQuantity,priceTotal);
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //common function to display data
@@ -43,7 +99,7 @@ function displayData(ProductName,ProductPrice,ProductQuantity,priceTotal){
     const container=document.getElementById('table-container')
     const tr=document.createElement('tr');
     tr.innerHTML=`
-    <td>${1}</td>
+    <td>${serial}</td>
     <td>${ProductName}</td>
     <td>${ProductPrice}</td>
     <td>${ProductQuantity}</td>
